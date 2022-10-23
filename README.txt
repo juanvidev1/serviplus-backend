@@ -1,5 +1,11 @@
 ESTE DOCUMENTO TIENE LOS PASOS Y GENERALIDADES DE LAS CONFIGURACIONES BÁSICAS PARA EL DESARROLLO 
-DEL BACKEND DE UNA APP WEB NODEJS.
+DEL BACKEND DE UNA APP WEB NODEJS INCLUYENDO EL MANEJO DEL REPOSITORIO EN GITHUB.
+
+Para guithub lo primero es tener una cuenta en www.github.com y clonar este repositorio en local para lo que estemos trabajando, o queramos trabajar.
+
+ES MUY IMPORTANTE CREAR UNA RAMA PROPIA PARA PODER TRABAJAR Y SUBIR CAMBIOS QUE PUEDAN SER REVISADOS ANTES DE AÑADIRLOS AL PROYECTO PRINCIPAL.
+
+Lo primero es copiar el link de del repositorio sobre el que queremos trabajar.
 
 Pasos para desarrollo de backend con NodeJs:
     
