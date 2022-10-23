@@ -16,7 +16,8 @@ const clientOperations = {};
  * Para la operación de crear, insertar o CREATE un registro nuevo dentro de nuestra coleccion  clientes.
  * Hay que recordar que la colección se creó automáticamente cuando llamamos el get a la base de datos de Mongo
  * por primera vez.
- * Lo primero que hay que hacer 
+ * Lo primero que hay que hacer es definir un objeto dumie para probar el funcionamiento de nuestro endpoint.
+ * 
 */
 clientOperations.createClient = async (req, res) => {
 
