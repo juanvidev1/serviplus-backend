@@ -20,6 +20,25 @@ const clientOperations = {};
  * 
 */
 clientOperations.createClient = async (req, res) => {
+    try {
+        /*const obj = {
+            first_name: "Juan",
+            last_name: "Reyes",
+            username: "juanvireyes",
+            password: "123456",
+            identification_number: "1023654789",
+            identification_type: "Cédula",
+            telefono: 123456789,
+            email: "juan@mail.com",
+            address: "calle falsa 123"
+        } */
+        const obj = req.body;
+        const cliente=new clientModel(obj);
+        const clienteGuardar=await cliente.save();
+        res.status(201).send(clienteGuardar);
+    } catch (error) {
+        res.status(400).send("Error creando cliente " + error);
+    }
 
 }
 
