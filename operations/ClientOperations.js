@@ -55,7 +55,7 @@ clientOperations.createClient = async (req, res) => {
 clientOperations.readClients = async (req, res) => {
     try {
         const clientsList = await clientModel.find(); // Línea 1
-        if(clientsList > 0) {  // Línea 2
+        if(clientsList.length > 0) {  // Línea 2
             res.status(200).send(clientsList);
         } else {
             res.status(404).send("No hay clientes registrados");
