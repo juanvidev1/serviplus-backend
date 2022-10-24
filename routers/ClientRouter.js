@@ -12,6 +12,7 @@ const router = require('express').Router();
  * de clientOperations que va a ejecutar... Para el get sería el de listar clientes (la función readClients)
  */
 router.get("/", clientOperations.readClients);
+router.post("/", clientOperations.createClient);
 
 
 

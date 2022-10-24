@@ -13,7 +13,8 @@ const mongoose = require('mongoose');
  * y si es único (cuando uno de los datos es único se evitará que haya registros duplicados cuando se cree uno nuevo)
  */
 const clientSchema = mongoose.Schema({
-    identification_number: {type: Number, required: true, unique: true},
+    identification_number: {type: String, maxLength: 10, required: true, unique: true},
+    identification_type: {type: String, maxLength: 35, required: true, unique: false},
     first_name: {type: String, maxLength: 60, required: true, unique: false},
     last_name: {type: String, maxLength: 60, required: true, unique: false},
     username: {type: String, maxLength: 50, required: true, unique: false},
