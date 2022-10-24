@@ -54,6 +54,7 @@ app.get("/", (req, res) => {
  * ClientRouters para que así muestre el método correcto del operations.
  */
 app.use("/clients", require("./routers/ClientRouter"));
+app.use("/users", require("./routers/UserRouter"));
 
 
 
