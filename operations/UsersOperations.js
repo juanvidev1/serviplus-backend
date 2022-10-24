@@ -31,7 +31,7 @@ userOperations.createUser = async (req, res) => {
 userOperations.listUsers = async (req, res) => {
     try {
         const userList = await UserModel.find();
-        if (userList.maxLenght > 0) {
+        if (userList.lenght > 0) {
             res.status(200).send(userList);
         } else {
             res.status(404).send("No hay usuarios creados");
